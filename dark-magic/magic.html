@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Magic</title>
+    <link rel="stylesheet" href="./magic.css">
+</head>
+<body>
+    <div class="master">
+        <header>
+            <h1>Welcome, retard!</h1>
+        </header>
+        <main>
+            <div class="box slideLeft">
+                <p id="magicGuess"></p>
+                <div class="curtain"></div>
+            </div>
+            <div class="introduction">
+                <p  id='what'>Inside this blue box, I've put something that I believe you might think about. It's a wild guess, but it ain't magic without a little miracle.</p>
+            </div>
+            <div class="start">
+                <p>If you're ready, press 'OK'.</p>
+                <button id="okBtn">OK</button>
+            </div>
+            <div class="revealBtnContainer" id="reveal-container">
+                <p>I'm nervous, but here we go.</p>
+                <button id="revealBtn">Tap to reveal what's inside the blue box.</button>
+            </div>
+            <div class='tryAgainContainer' id="try-container">
+                <p id="resultText">Oops, you lost. I guessed your word.</p>
+                <button id="tryAgainBtn">Back</button>
+            </div>
+        </main>
+    </div>
+    <script src="./magic.js"></script>
+</body>
+</html>

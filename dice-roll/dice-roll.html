@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Roll</title>
+    <link rel="stylesheet" href="./dice-roll.css" />
+  </head>
+  <body>
+    <div class="master">
+      <header>
+        <h1>DICE ROLLER</h1>
+      </header>
+      <main>
+        <div class="upper">
+          <p># of dice:</p>
+          <!-- <input
+          type="number"
+          min="1"
+          max="6"
+          step="1"
+          value="1"
+          id="inputUser"
+        /> -->
+          <select name="number" id="number">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </div>
+        <button id="roll">Roll</button>
+        <p id="result">Results:</p>
+        <p id="total">Total:</p>
+        <div class="dice-container" id="dice-container"></div>
+        <p class="roll-counter">Roll Counter:</p>
+        <p class="last-roll"></p>
+        <a href="../index.html">Return to Menu</a>
+      </main>
+    </div>
+    <script src="./dice-roll.js"></script>
+  </body>
+</html>

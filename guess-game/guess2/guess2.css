@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: white; */
+    padding-inline: 20px;
+    background-image: url(../6203606.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    color: white;
+    min-height: 100vh;
+}
+
+.master {
+    /* background-color: hsl(0, 0%, 96%); */
+    background-image: url(../6203606.jpg);
+    background-size: cover;
+    box-shadow: 5px 5px 50px 10px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    text-align: center;
+    padding-inline: 10px;
+    font-size: 1.2rem;
+    min-width: 300px;
+    max-width: 768px;
+    margin: auto;
+    margin-block: 20px;
+    padding-block: 30px;
+    border: black;
+}
+
+.boxes-container {
+    margin-block: 20px;
+}
+
+.container {
+    border: 2px solid red;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 20%;
+}
+
+.user-container>input {
+    margin-top: 10px;
+}
+.user-container>button {
+    margin-top: 5px;
+    width: 50%;
+    align-self: center;
+    padding-block: 5px;
+    font-size: 1.15rem;
+    color: black;
+}
+
+input {
+    text-align: center;
+    font-size: 1rem;
+    padding-block: 10px;
+}
+
+.cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    background-color: blue;
+}
+
+.fadeOut {
+    animation: fadeOut 1s ease-in-out forwards;
+}
+
+.fadeIn {
+    animation: fadeOut 1s ease-in-out reverse forwards;
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

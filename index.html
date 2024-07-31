@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Menu</title>
+    <link rel="stylesheet" href="./menu.css" />
+    <meta name="author" content="Kyle Yuan" />
+  </head>
+  <body>
+    <div class="master">
+      <header>
+        <h1>Main Menu</h1>
+      </header>
+      <main>
+        <div class="guessing-game">
+          <button id="guessGame">Guessing Game</button>
+          <p>
+            Winning condition: You are able to guess the hidden number 3 times
+            in a row.
+          </p>
+        </div>
+        <div class="dice-roll">
+          <button id="diceRoll">Dice Roll</button>
+          <p>No winning condition. Just roll some dice.</p>
+        </div>
+        <div class="dark-magic">
+          <button id="darkMagicChallenge">
+            Dark Magic Challenge
+            <p id="notyet"></p>
+          </button>
+          <p>
+            Winning condition: If I didn't quite guess what you were thinking.
+          </p>
+        </div>
+      </main>
+    </div>
+    <script src="./menu.js"></script>
+  </body>
+</html>

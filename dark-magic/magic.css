@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* background-color: white; */
+    padding-inline: 20px;
+    color: white;
+    background-image: url('./3d-render-grunge-room-interior-with-foggy-atmosphere.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    min-height: 100vh;
+}
+
+.master {
+    /* background-color: hsl(0, 0%, 96%); */
+    background-image: url('./3d-render-grunge-room-interior-with-foggy-atmosphere.jpg');
+    background-size: cover;
+    box-shadow: 5px 5px 50px 10px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    text-align: center;
+    padding-inline: 10px;
+    font-size: 1.2rem;
+    min-width: 300px;
+    max-width: 768px;
+    margin: auto;
+    margin-block: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border: black;
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+main>.box {
+    position: relative;
+    border: 2px solid red;
+    /* width: 50%; */
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main>.box>#magicGuess {
+    font-size: 1.5rem;
+}
+
+main>.box>.curtain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+}
+
+main>.introduction {
+    margin-top: 20px;
+}
+
+main>.start {
+    margin-top: 20px;
+}
+
+main>.start>#okBtn {
+    padding-inline: 10px;
+    padding-block: 5px;
+    margin-top: 10px;
+    width: 150px;
+    font-size: 1.15rem;
+}
+
+main>.revealBtnContainer {
+    margin-top: 20px;
+    opacity: 0;
+    display: none;
+
+}
+
+main>.revealBtnContainer>#revealBtn {
+    padding-inline: 10px;
+    padding-block: 5px;
+    font-size: 1.15rem;
+}
+
+main>.tryAgainContainer {
+    margin-top: 20px;
+    opacity: 0;
+    display: none;
+
+}
+
+main>.tryAgainContainer>#tryAgainBtn {
+    padding-inline: 10px;
+    padding-block: 5px;
+    font-size: 1.15rem;
+    margin-top: 20px;
+}
+
+button {
+    border-radius: 10px;
+    background-color: white;
+    border-color: black;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.5);
+}
+
+button:active {
+    background-color: rgb(216, 216, 216);
+}
+
+img {
+    height: 250px;
+    width: 100%;
+}
+
+.fadeIn {
+    animation: fadeAnimation 2s ease-in-out  forwards;
+}
+
+.fadeOut {
+    animation: fadeAnimation 2s ease-in-out reverse forwards;
+}
+
+.slideLeft {
+    animation: slideAnimation 2s ease-in-out forwards;
+}
+
+@keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideAnimation {
+    0% {
+        opacity: 0;
+        right:-100%;
+        width: 50px;
+    }
+    50% {
+        width: 100px;
+    }
+    100% {
+        opacity: 1;
+        right: -2.5%;
+        width: 95%;
+    }
+}

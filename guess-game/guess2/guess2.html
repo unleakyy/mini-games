@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+    <link rel="stylesheet" href="./guess2.css">
+</head>
+<body>
+    <div class="master">
+        <header>
+            <h1>2nd Round!</h1>
+            <h3>Guess the number inside the box. <span>2/3</span></h3>
+        </header>
+        <main>
+            <div class="boxes-container">
+                <div class="container">
+                    <p id="answer">1000</p>
+                    <div class="cover"></div>
+                </div>
+            </div>
+            <div class="user-container">
+                <p>Type your guess below.</p>
+                <p id="comment"></p>
+                <input type="text" id='userInput' placeholder="0 - 5">
+                <button id="okBtn">OK</button>
+            </div>
+        </main>
+    </div>
+    <script src="./guess2.js"></script>
+</body>
+</html>

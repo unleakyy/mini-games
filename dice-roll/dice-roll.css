@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* #inputUser {
+  caret-color: transparent;
+  cursor: default;
+} */
+
+body {
+  background-image: url(./images/bg.jpg);
+}
+
+.master {
+  background-image: url(./images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  min-width: 200px;
+  width: 90%;
+  max-width: 550px;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  box-shadow: 1px 1px 15px 5px hsla(50, 100%, 50%, 0.75);
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 3px 3px 5px black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  margin-top: 10px;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+main > .upper {
+  display: flex;
+  column-gap: 10px;
+}
+
+main > #roll {
+  padding-inline: 20px;
+  font-size: 1.15rem;
+  padding-block: 5px;
+}
+
+#roll:hover {
+  cursor: pointer;
+}
+
+select {
+  background-color: transparent;
+  color: white;
+  box-shadow: 1px 1px 5px 1px gold;
+}
+option {
+  color: black;
+}
+
+main > .dice-container {
+  height: fit-content;
+  width: 100%;
+  max-width: 400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  padding: 10px;
+  gap: 10px;
+}
+
+.dice {
+  min-height: 100px;
+  min-width: 100px;
+  align-self: center;
+  justify-self: center;
+  border: 5px solid black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px gold;
+}
+
+.roll-counter {
+  color: rgb(183, 182, 182);
+  position: absolute;
+  top: 0%;
+  left: 3%;
+  transform: translate(-0%, -0%);
+  font-size: 0.5rem;
+}
+
+a {
+  color: white;
+  font-size: 0.75rem;
+  align-self: flex-end;
+}
